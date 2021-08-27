@@ -29,7 +29,7 @@ rm -rf feeds/packages/utils/ttyd
 rm -rf package/lean/luci-theme-argon
 rm -rf package/kernel/mac80211/files/lib/wifi
 rm -rf package/lean/reclone*
-rm -rf package/lean/pdnsd-alt
+# rm -rf package/lean/pdnsd-alt
 rm -rf package/lean/luci-app-zerotier
 
 # 添加额外非必须软件包
