@@ -48,6 +48,6 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-ser
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 
-#添加smartdns
+# 添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
