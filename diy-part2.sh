@@ -45,8 +45,8 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-ser
 # git clone  https://github.com/Boos4721/openwrt/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 
 # Add luci-theme-argon
-# git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+# git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 
 # 添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
