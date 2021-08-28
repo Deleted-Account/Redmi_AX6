@@ -20,8 +20,8 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=65535' package/base-files/files/etc/sysctl.conf
 
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
-# sed -i 's/$1$WplwC1t5$HBAtVXABp7XbvVjG4193B.:18753:0:99999:7/:0:0:99999:7/g' package/base-files/files/etc/shadow
-# sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/$1$WplwC1t5$HBAtVXABp7XbvVjG4193B.:18753:0:99999:7/:0:0:99999:7/g' package/base-files/files/etc/shadow
+sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 # 移除不用软件包  
 rm -rf package/lean/luci-app-ttyd
@@ -38,15 +38,15 @@ rm -rf package/kernel/mac80211/files/lib/wifi
 svn co https://github.com/jarod360/packages/trunk/ttyd package/ttyd
 svn co https://github.com/jarod360/openwrt/trunk/package/kernel/mac80211/files/lib/wifi package/kernel/mac80211/files/lib/wifi
 git clone https://github.com/jarod360/luci-app-ttyd package/luci-app-ttyd
-git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
+# git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 # git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 # git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
 # svn co https://github.com/Boos4721/openwrt/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 # git clone  https://github.com/Boos4721/openwrt/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 
 # Add luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-# git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
+# git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 
 # 添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
