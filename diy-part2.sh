@@ -31,6 +31,7 @@ rm -rf package/kernel/mac80211/files/lib/wifi
 # rm -rf package/lean/reclone*
 rm -rf package/lean/pdnsd-alt
 # rm -rf package/lean/luci-app-zerotier
+rm -rf feeds/packages/luci-app-argon-config
 
 # 添加额外非必须软件包
 # git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
@@ -48,6 +49,7 @@ git clone https://github.com/jarod360/luci-app-ttyd package/luci-app-ttyd
 # Add luci-theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 # git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
+git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # 添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
