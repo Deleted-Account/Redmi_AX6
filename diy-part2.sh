@@ -36,15 +36,17 @@ rm -rf feeds/packages/luci-app-argon-config
 # 添加额外非必须软件包
 # git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 # git clone https://github.com/vernesong/OpenClash.git package/OpenClash
+
 svn co https://github.com/jarod360/packages/trunk/ttyd package/ttyd
-svn co https://github.com/jarod360/openwrt/trunk/package/kernel/mac80211/files/lib/wifi package/kernel/mac80211/files/lib/wifi
 git clone https://github.com/jarod360/luci-app-ttyd package/luci-app-ttyd
+svn co https://github.com/jarod360/openwrt/trunk/package/kernel/mac80211/files/lib/wifi package/kernel/mac80211/files/lib/wifi
+
 # git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 # git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
 # svn co https://github.com/Boos4721/openwrt/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 # git clone  https://github.com/Boos4721/openwrt/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 
-# git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
+git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 
 # Add luci-theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
