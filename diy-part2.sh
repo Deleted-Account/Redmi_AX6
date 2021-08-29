@@ -10,28 +10,36 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+
 # Modify default IP
 sed -i 's/10.10.10.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
+
 
 # 修改连接数数
 # sed -i 's/net.netfilter.nf_conntrack_max=.*/net.netfilter.nf_conntrack_max=65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 # 修正连接数（by ベ七秒鱼ベ）
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=65535' package/base-files/files/etc/sysctl.conf
 
+
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 sed -i 's/$1$WplwC1t5$HBAtVXABp7XbvVjG4193B.:18753:0:99999:7/:0:0:99999:7/g' package/base-files/files/etc/shadow
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
+
 # 移除不用软件包  
 rm -rf package/lean/luci-app-ttyd
 rm -rf feeds/packages/utils/ttyd
+
 rm -rf package/lean/luci-theme-argon
-rm -rf package/kernel/mac80211/files/lib/wifi
-# rm -rf package/lean/reclone*
-rm -rf package/lean/pdnsd-alt
-# rm -rf package/lean/luci-app-zerotier
 rm -rf feeds/packages/luci-app-argon-config
+
+rm -rf package/kernel/mac80211/files/lib/wifi
+
+# rm -rf package/lean/reclone*
+# rm -rf package/lean/pdnsd-alt
+# rm -rf package/lean/luci-app-zerotier
+
 
 # 添加额外非必须软件包
 # git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
@@ -48,10 +56,13 @@ svn co https://github.com/jarod360/openwrt/trunk/package/kernel/mac80211/files/l
 
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 
+
 # Add luci-theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-# git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+
+# git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
+
 
 # 添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
