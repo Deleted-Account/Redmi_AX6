@@ -28,13 +28,13 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 
 
 # 移除不用软件包  
-rm -rf package/lean/luci-app-ttyd
-rm -rf feeds/packages/utils/ttyd
+# rm -rf package/lean/luci-app-ttyd
+# rm -rf feeds/packages/utils/ttyd
 
 rm -rf package/lean/luci-theme-argon
 rm -rf feeds/packages/luci-app-argon-config
 
-rm -rf package/kernel/mac80211/files/lib/wifi
+# rm -rf package/kernel/mac80211/files/lib/wifi
 
 # rm -rf package/lean/reclone*
 # rm -rf package/lean/pdnsd-alt
@@ -45,9 +45,9 @@ rm -rf package/kernel/mac80211/files/lib/wifi
 # git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 # git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 
-svn co https://github.com/jarod360/packages/trunk/ttyd package/ttyd
-git clone https://github.com/jarod360/luci-app-ttyd package/luci-app-ttyd
-svn co https://github.com/jarod360/openwrt/trunk/package/kernel/mac80211/files/lib/wifi package/kernel/mac80211/files/lib/wifi
+# svn co https://github.com/jarod360/packages/trunk/ttyd package/ttyd
+# git clone https://github.com/jarod360/luci-app-ttyd package/luci-app-ttyd
+# svn co https://github.com/jarod360/openwrt/trunk/package/kernel/mac80211/files/lib/wifi package/kernel/mac80211/files/lib/wifi
 
 # git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 # git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
