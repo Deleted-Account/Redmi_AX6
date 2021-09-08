@@ -39,8 +39,7 @@ rm -rf feeds/packages/luci-app-argon-config
 # rm -rf package/lean/reclone*
 # rm -rf package/lean/luci-app-zerotier
 
-# delete pdnsd and compile onece. I'm wondering if it will successfully compile.
-rm -rf package/lean/pdnsd-alt
+# rm -rf package/lean/pdnsd-alt
 
 # 添加额外非必须软件包
 # git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
