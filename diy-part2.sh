@@ -70,4 +70,4 @@ git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
 # TEST
-find /package/lean -name “zh-cn” |xargs rm -rf 
+find /package/lean -name "zh-cn" |xargs rm -rf 
