@@ -31,8 +31,8 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # rm -rf package/lean/luci-app-ttyd
 # rm -rf feeds/packages/utils/ttyd
 
-rm -rf package/lean/luci-theme-argon
-rm -rf feeds/packages/luci-app-argon-config
+# rm -rf package/lean/luci-theme-argon
+# rm -rf feeds/packages/luci-app-argon-config
 
 # rm -rf package/kernel/mac80211/files/lib/wifi
 
