@@ -70,4 +70,7 @@ git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
 # Kick-ass
-git clone https://github.com/zaiyuyishiyoudu/luci-app-kickass package/luci-app-kickass
+# git clone https://github.com/zaiyuyishiyoudu/luci-app-kickass package/luci-app-kickass
+
+# Merge Lean's EasyMesh
+svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-easymesh package/luci-app-easymesh
