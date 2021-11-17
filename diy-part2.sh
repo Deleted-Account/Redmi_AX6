@@ -74,3 +74,5 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 
 # Merge Lean's EasyMesh
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-easymesh package/luci-app-easymesh
+rm -rf package/lean/luci-app-easymesh
+git clone https://github.com/Boos4721/openwrt/tree/master/package/lean/luci-app-easymesh package/luci-app-easymesh
