@@ -41,7 +41,7 @@ rm -rf feeds/packages/luci-app-argon-config
 
 # rm -rf package/lean/pdnsd-alt
 
-rm -rf package/lean/luci-app-easymesh
+# rm -rf package/lean/luci-app-easymesh
 
 # 添加额外非必须软件包
 # git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
@@ -75,4 +75,4 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 # git clone https://github.com/zaiyuyishiyoudu/luci-app-kickass package/luci-app-kickass
 
 # Merge Lean's EasyMesh
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-easymesh package/luci-app-easymesh
+# svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-easymesh package/luci-app-easymesh
