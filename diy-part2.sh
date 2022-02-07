@@ -76,3 +76,6 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 
 # Merge Lean's EasyMesh
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-easymesh package/luci-app-easymesh
+
+# CPU Freq
+svn co https://github.com/Boos4721/openwrt/trunk/package/lean/luci-app-cpufreq package/luci-app-cpufreq
