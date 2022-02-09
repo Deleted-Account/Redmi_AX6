@@ -22,8 +22,8 @@ on:
 env:
   REPO_URL: https://github.com/Boos4721/openwrt
 #  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
-#  REPO_BRANCH: backport-k5.15
+#  REPO_BRANCH: master
+  REPO_BRANCH: backport-k5.15
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
 #  CONFIG_FILE: AX6.config
@@ -63,11 +63,11 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
-#    - name: Cache
-#      uses: klever1988/cachewrtbuild@main
-#      with:
-#        ccache: 'true'
-#        prefix: ${{ github.workspace }}/openwrt
+    - name: Cache
+      uses: klever1988/cachewrtbuild@main
+      with:
+        ccache: 'true'
+        prefix: ${{ github.workspace }}/openwrt
 
     - name: Load custom feeds
       run: |
