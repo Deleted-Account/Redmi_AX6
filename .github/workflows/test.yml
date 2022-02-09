@@ -38,9 +38,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          ref: master
-          fetch-depth: 0
 
       - name: Set cache
         uses: klever1988/cachewrtbuild@main
