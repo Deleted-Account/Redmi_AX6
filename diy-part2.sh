@@ -64,8 +64,7 @@ rm -rf feeds/packages/luci-app-argon-config
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
-# git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
-
+git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
 
 # 添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
