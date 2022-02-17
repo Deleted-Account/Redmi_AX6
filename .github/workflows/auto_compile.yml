@@ -33,7 +33,7 @@ env:
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
-  TZ: Asia/Hongkong
+  TZ: Asia/Hong_Kong
   FILE_NAME: OpenWRT-Redmi~AX6
 
 jobs:
