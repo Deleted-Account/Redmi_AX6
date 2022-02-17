@@ -18,12 +18,12 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-#  schedule:
-#    - cron: '15 18 * * 2,5'
+  schedule:
+    - cron: 15 21 * * 2,5
 
 env:
-#  REPO_URL: https://github.com/Boos4721/openwrt
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/Boos4721/openwrt
+#  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
 #  REPO_BRANCH: QSDK.11.5
   FEEDS_CONF: feeds.conf.default
@@ -33,7 +33,7 @@ env:
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
-  TZ: Asia/Shanghai
+  TZ: Asia/Hongkong
   FILE_NAME: OpenWRT-Redmi~AX6
 
 jobs:
