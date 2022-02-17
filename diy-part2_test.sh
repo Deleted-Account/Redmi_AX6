@@ -79,10 +79,10 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 # CPU Freq
 # svn co https://github.com/Boos4721/openwrt/trunk/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 
-svn co https://github.com/Boos4721/openwrt/trunk/config config
-svn co https://github.com/Boos4721/openwrt/trunk/include include
-svn co https://github.com/Boos4721/openwrt/trunk/package package
-svn co https://github.com/Boos4721/openwrt/trunk/scripts scripts
-svn co https://github.com/Boos4721/openwrt/trunk/target target
-svn co https://github.com/Boos4721/openwrt/trunk/toolchain toolchain
-svn co https://github.com/Boos4721/openwrt/trunk/tools tools
+# svn co https://github.com/Boos4721/openwrt/trunk/config config
+# svn co https://github.com/Boos4721/openwrt/trunk/include include
+# svn co https://github.com/Boos4721/openwrt/trunk/package package
+# svn co https://github.com/Boos4721/openwrt/trunk/scripts scripts
+# svn co https://github.com/Boos4721/openwrt/trunk/target target
+# svn co https://github.com/Boos4721/openwrt/trunk/toolchain toolchain
+# svn co https://github.com/Boos4721/openwrt/trunk/tools tools
