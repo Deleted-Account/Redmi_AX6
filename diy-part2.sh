@@ -64,7 +64,8 @@ rm -rf feeds/packages/luci-app-argon-config
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
-# git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
+git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
+sed -i 's/shadowsocksr/passwall/g' package/luci-theme-neobird/luasrc/view/themes/neobird/header.htm 
 
 # 添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
@@ -82,11 +83,11 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 # svn co https://github.com/Boos4721/openwrt/trunk/package/kernel/bpf-headers package/kernel/bpf-headers
 # svn co https://github.com/Boos4721/openwrt/trunk/package/kernel/mac80211 package/kernel/mac80211
 
-svn co https://github.com/Boos4721/openwrt/trunk/target/linux/ipq807x target/linux/ipq807x
-svn co https://github.com/Boos4721/openwrt/trunk/toolchain/gcc toolchain/gcc 
+# svn co https://github.com/Boos4721/openwrt/trunk/target/linux/ipq807x target/linux/ipq807x
+# svn co https://github.com/Boos4721/openwrt/trunk/toolchain/gcc toolchain/gcc 
 
 # svn co https://github.com/Boos4721/openwrt/trunk/package/kernel package/kernel
 # svn co https://github.com/Boos4721/openwrt/trunk/package/libs package/libs/
 # svn co https://github.com/Boos4721/openwrt/trunk/package/network package/network
 
-svn co https://github.com/Boos4721/openwrt/trunk/package package
+# svn co https://github.com/Boos4721/openwrt/trunk/package package
