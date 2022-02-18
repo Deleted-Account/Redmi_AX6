@@ -56,8 +56,11 @@ rm -rf feeds/packages/luci-app-argon-config
 # svn co https://github.com/Boos4721/openwrt/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 # git clone  https://github.com/Boos4721/openwrt/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 
-# upstream included. comment out
-# git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
+# ServerChan
+rm -rf package/luci-app-serverchan
+rm -rf package/lean/luci-app-serverchan
+
+git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 
 
 # Add themes
