@@ -1,4 +1,5 @@
 基本上只包含 Passwall（SSR，无其他协议）、SmartDNS、SQM 的一个超精简 AX6 固件
+
 (其实SQM也可以删的，NSS和这货不兼容。不像x86的上打开SFE，SQM实测还是有效果)
 
 有 FullconeNAT。考虑了下，UPnP 也删除了
