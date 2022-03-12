@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: AX6__5.15-dev
 
 on:
   repository_dispatch:
@@ -20,13 +20,10 @@ on:
         default: 'false'
 
 env:
-#  REPO_URL: https://github.com/Boos4721/openwrt
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
-#  REPO_BRANCH: backport-k5.15
+  REPO_URL: https://github.com/robimarko/openwrt
+  REPO_BRANCH: ipq807x-5.15
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
-#  CONFIG_FILE: AX6.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -75,7 +72,7 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-        useVersionInfo=$(git show -s --date=short --format="编译前的最后一次[➦主源码](https://github.com/Boos4721/openwrt)更新记录:<br/>更新人: %an<br/>更新时间: %cd<br/>更新内容: %s<br/>哈希值: %H")
+        useVersionInfo=$(git show -s --date=short --format="编译前的最后一次[➦主源码](https://github.com/robimarko/openwrt/tree/ipq807x-5.15)更新记录:<br/>更新人: %an<br/>更新时间: %cd<br/>更新内容: %s<br/>哈希值: %H")
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
         echo "DATE=$(date "+%Y-%m-%d-%H:%M:%S")" >> $GITHUB_ENV
         echo "DATE1=$(date "+%Y.%m.%d")" >> $GITHUB_ENV
