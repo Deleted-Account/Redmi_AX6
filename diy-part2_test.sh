@@ -90,3 +90,6 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 # svn co https://github.com/Boos4721/openwrt/trunk/target target
 # svn co https://github.com/Boos4721/openwrt/trunk/toolchain toolchain
 # svn co https://github.com/Boos4721/openwrt/trunk/tools tools
+
+# Passwall LuCI
+git clone -b luci https://github.com/jerrykuku/luci-theme-argon package/luci-app-passwall
