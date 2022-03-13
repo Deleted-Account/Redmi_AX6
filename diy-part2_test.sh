@@ -53,7 +53,7 @@ rm -rf feeds/packages/luci-app-argon-config
 
 # git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 # git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
-# svn co https://github.com/Boos4721/openwrt/tree/master/package/lean/luci-app-cpufreq package/luci-app-cpufreq
+# svn co https://github.com/Boos4721/openwrt/trunk/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 
 # ServerChan
 rm -rf package/luci-app-serverchan
