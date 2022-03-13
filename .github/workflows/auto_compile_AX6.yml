@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: AutoComplile AX6_AP
+name: AutoComplile__AX6_AP
 
 on:
   repository_dispatch:
