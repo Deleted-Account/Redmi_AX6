@@ -39,7 +39,8 @@ rm -rf feeds/packages/luci-app-argon-config
 # rm -rf package/lean/reclone*
 # rm -rf package/lean/luci-app-zerotier
 
-# rm -rf package/lean/pdnsd-alt
+# remove pdnsd
+rm -rf package/lean/pdnsd-alt
 
 # rm -rf package/lean/luci-app-easymesh
 
@@ -90,5 +91,8 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 # svn co https://github.com/Boos4721/openwrt/trunk/toolchain toolchain
 # svn co https://github.com/Boos4721/openwrt/trunk/tools tools
 
-# Passwall LuCI
-# svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/luci-app-passwall
+# Passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/luci-app-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/shadowsocksr-libev package/shadowsocksr-libev
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/simple-obfs package/simple-obfs
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/tcping package/tcping
