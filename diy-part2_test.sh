@@ -40,7 +40,7 @@ rm -rf feeds/packages/luci-app-argon-config
 # rm -rf package/lean/luci-app-zerotier
 
 # remove pdnsd
-rm -rf package/lean/pdnsd-alt
+# rm -rf package/lean/pdnsd-alt
 
 # rm -rf package/lean/luci-app-easymesh
 
@@ -70,7 +70,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-ar
 # git clone https://github.com/thinktip/luci-theme-neobird package/luci-theme-neobird
 # sed -i 's/shadowsocksr/passwall/g' package/luci-theme-neobird/luasrc/view/themes/neobird/header.htm
 
-# 添加smartdns
+# Smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
