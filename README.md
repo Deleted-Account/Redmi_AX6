@@ -34,6 +34,8 @@ kv漫游回来断网的问题，12 月底 Boos 已修复，感谢大佬，赞美
 
 ---
 
-xiaorouji把Passwall的LuCI分出来了
+xiaorouji 把 Passwall 的 LuCI 分出来了
 
 如果我没编译进去，一定是我的姿势不对
+
+目前是用 svn co 命令，加入 https://github.com/xiaorouji/openwrt-passwall 的 shadowsocksr-libev simple-obfs 以及分支下的 luci-app-passwall
