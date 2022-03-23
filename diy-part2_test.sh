@@ -40,7 +40,7 @@ rm -rf feeds/packages/luci-app-argon-config
 # rm -rf package/lean/luci-app-zerotier
 
 # remove pdnsd
-# rm -rf package/lean/pdnsd-alt
+rm -rf package/lean/pdnsd-alt
 
 # rm -rf package/lean/luci-app-easymesh
 
