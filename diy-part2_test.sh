@@ -72,7 +72,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-ar
 
 # Smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
-# git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
 # Kick-ass
 # git clone https://github.com/zaiyuyishiyoudu/luci-app-kickass package/luci-app-kickass
