@@ -20,9 +20,9 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/Deleted-Account/Boos_OpenWRT_backup
+  REPO_URL: https://github.com/Deleted-Account/Boos_OpenWRT_last_IPQ807x_5.10
   REPO_BRANCH: master
-#  REPO_BRANCH: stable
+#   REPO_BRANCH: f8e3f9e3e6a64b94a676dc68bab87c6169ffbaf2
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
