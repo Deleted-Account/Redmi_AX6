@@ -22,7 +22,7 @@ on:
     - cron: 15 21 2,7,12,17,22,27 * *
 
 env:
-  REPO_URL: https://github.com/Deleted-Account/Boos_OpenWRT_last_IPQ807x_5.10
+  REPO_URL: https://github.com/zxlhhyccc/openwrt--Boos4721
   REPO_BRANCH: master
 #   REPO_BRANCH: f8e3f9e3e6a64b94a676dc68bab87c6169ffbaf2
   FEEDS_CONF: feeds.conf.default
