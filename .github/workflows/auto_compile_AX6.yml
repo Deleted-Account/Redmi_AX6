@@ -82,7 +82,7 @@ jobs:
 
     - name: Update feeds
       run: |
-        chmod 777 openwrt/scripts/*
+        chmod 777 openwrt/*
         cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
