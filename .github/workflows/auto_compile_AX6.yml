@@ -22,7 +22,8 @@ on:
 #     - cron: 15 21 2,7,12,17,22,27 * *
 
 env:
-  REPO_URL: https://github.com/Deleted-Account/5.10
+#   REPO_URL: https://github.com/Deleted-Account/5.10
+  REPO_URL: https://github.com/Deleted-Account/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
