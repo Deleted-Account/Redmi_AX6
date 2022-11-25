@@ -20,8 +20,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/hochenchong/lede-for-redmi-ax6
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/sdf8057/lede.git
+  REPO_BRANCH: ipq807x
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -45,10 +45,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
-        sudo -E apt-get -qq update
-        sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
-        sudo -E apt-get -qq autoremove --purge
-        sudo -E apt-get -qq clean
+        sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.eu.org/init_build_environment.sh)'
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
@@ -72,7 +69,7 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-        useVersionInfo=$(git show -s --date=short --format="编译前的最后一次[➦主源码](https://github.com/Deleted-Account/Boos_OpenWRT_backup)更新记录:<br/>更新人: %an<br/>更新时间: %cd<br/>更新内容: %s<br/>哈希值: %H")
+        useVersionInfo=$(git show -s --date=short --format="编译前的最后一次[➦主源码](https://github.com/sdf8057/lede/tree/ipq807x)更新记录:<br/>更新人: %an<br/>更新时间: %cd<br/>更新内容: %s<br/>哈希值: %H")
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
         echo "DATE=$(date "+%Y-%m-%d-%H:%M:%S")" >> $GITHUB_ENV
         echo "DATE1=$(date "+%Y.%m.%d")" >> $GITHUB_ENV
