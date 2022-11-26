@@ -31,8 +31,8 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # rm -rf package/lean/luci-app-ttyd
 # rm -rf feeds/packages/utils/ttyd
 
-rm -rf package/lean/luci-theme-argon
-rm -rf feeds/packages/luci-app-argon-config
+# rm -rf package/lean/luci-theme-argon
+# rm -rf feeds/packages/luci-app-argon-config
 
 # rm -rf package/kernel/mac80211/files/lib/wifi
 
@@ -63,13 +63,13 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-ser
 
 
 # Add themes
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+# git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+# git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # git clone https://github.com/thinktip/luci-theme-neobird package/luci-theme-neobird
 # sed -i 's/shadowsocksr/passwall/g' package/luci-theme-neobird/luasrc/view/themes/neobird/header.htm
 
-# 添加smartdns
+# Smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
