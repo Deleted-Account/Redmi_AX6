@@ -1,6 +1,7 @@
 2022年12月03日：
 
 1.相比11月底，上游源把 v2ray-geoip v2ray-geosite 这两个依赖去掉了，编译出来的固件又轻盈了1.几MB。
+
 2.Lean大佬的 高性能模式 FullCone-NAT，看好多网友说开启后会变成 NAT4，我没试过（配置里面关闭了 luci-app-turboacc_INCLUDE_PDNSD 的安装，那个 高性能模式 FullCone-NAT 也就没有了）。
 
 ---
