@@ -4,6 +4,8 @@
 
 2.Lean大佬的 高性能模式 FullCone-NAT，看好多网友说开启后会变成 NAT4，我没试过（配置里面关闭了 luci-app-turboacc_INCLUDE_PDNSD 的安装，那个 高性能模式 FullCone-NAT 也就没有了）。
 
+3.上游默认没安装 luci-ssl-openssl (大部分人用不到这个。有外网https登录的需求，才考虑安装这组件)。
+
 ---
 
 2022年11月26日：
