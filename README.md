@@ -1,19 +1,18 @@
 2022年12月03日：
 
-1.相比11月底，上游源把 v2ray-geoip v2ray-geosite 这两个依赖去掉了，编译出来的固件又轻盈了1.几MB。
+1. 相比11月底，上游源把 v2ray-geoip v2ray-geosite 这两个依赖去掉了，编译出来的固件又轻盈了1.几MB。
 
-2.Lean大佬的 高性能模式 FullCone-NAT，看好多网友说开启后会变成 NAT4，我没试过（配置里面关闭了 luci-app-turboacc_INCLUDE_PDNSD 的安装，那个 高性能模式 FullCone-NAT 也就没有了）。
-
-3.上游默认没安装 luci-ssl-openssl (大部分人用不到这个。有外网https登录的需求，才考虑安装这组件)。
+2. Lean 大佬的 高性能模式 FullCone-NAT，看好多网友说开启后会变成 NAT4，我没试过（配置里面我关闭了 luci-app-turboacc_INCLUDE_PDNSD 的安装，那个 高性能模式 FullCone-NAT 也就没有了）。
 
 ---
 
 2022年11月26日：
 
-上游源换成 sdf8057 大佬的，参考 https://github.com/sdf8057/cloudbuild
-已经可以正常编译
+1. 上游源换成 sdf8057 大佬的，参考 https://github.com/sdf8057/cloudbuild 已经可以正常编译
 
-内核是5.10，有线NSS驱动正常，kv漫游正常
+2. 内核是5.10，有线 NSS 驱动正常，kv 漫游正常
+
+3. 上游默认没安装 luci-ssl-openssl (大部分人用不到这个。有外网 https 登录的需求，才考虑安装这组件)。顺便还添加了上游源默认没安装的 htop。
 
 ---
 
