@@ -58,6 +58,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # ServerChan
 rm -rf package/luci-app-serverchan
 rm -rf package/lean/luci-app-serverchan
+rm -rf feeds/luci/applications/luci-app-serverchan
 
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 
@@ -70,6 +71,13 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-ser
 # sed -i 's/shadowsocksr/passwall/g' package/luci-theme-neobird/luasrc/view/themes/neobird/header.htm
 
 # Smartdns
+rm -rf package/luci-app-smartdns
+rm -rf package/lean/luci-app-smartdns
+rm -rf feeds/luci/applications/luci-app-smartdns
+rm -rf package/smartdns
+rm -rf package/lean/smartdns
+rm -rf feeds/luci/applications/lsmartdns
+
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
@@ -98,6 +106,10 @@ svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq packa
 # svn co https://github.com/Boos4721/openwrt/trunk/tools tools
 
 # Passwall
+rm -rf package/luci-app-passwall
+rm -rf package/lean/luci-app-passwall
+rm -rf feeds/luci/applications/luci-app-passwall
+
 svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/luci-app-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/shadowsocksr-libev package/shadowsocksr-libev
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/simple-obfs package/simple-obfs
