@@ -97,6 +97,7 @@ rm -rf feeds/luci/applications/luci-app-cpufreq
 # svn co https://github.com/Boos4721/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
 # svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
 svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq package/luci-app-cpufreq
+svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
 
 # svn co https://github.com/Boos4721/openwrt/trunk/config config
 # svn co https://github.com/Boos4721/openwrt/trunk/include include
