@@ -55,6 +55,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
 # svn co https://github.com/Boos4721/openwrt/trunk/package/lean/luci-app-cpufreq package/luci-app-cpufreq
 
+
 # ServerChan
 rm -rf package/luci-app-serverchan
 rm -rf package/lean/luci-app-serverchan
@@ -87,6 +88,7 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 # Merge Lean's EasyMesh
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-easymesh package/luci-app-easymesh
 
+
 # CPU Freq
 rm -rf package/luci-app-cpufreq
 rm -rf package/lean/luci-app-cpufreq 
@@ -97,7 +99,13 @@ rm -rf feeds/luci/applications/luci-app-cpufreq
 # svn co https://github.com/Boos4721/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
 # svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
 svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq package/luci-app-cpufreq
+svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq package/lean/luci-app-cpufreq 
 svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
+
+svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
+svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq package/lean/luci-app-cpufreq 
+svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
+
 
 # svn co https://github.com/Boos4721/openwrt/trunk/config config
 # svn co https://github.com/Boos4721/openwrt/trunk/include include
@@ -106,6 +114,7 @@ svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufr
 # svn co https://github.com/Boos4721/openwrt/trunk/target target
 # svn co https://github.com/Boos4721/openwrt/trunk/toolchain toolchain
 # svn co https://github.com/Boos4721/openwrt/trunk/tools tools
+
 
 # Passwall
 rm -rf package/luci-app-passwall
