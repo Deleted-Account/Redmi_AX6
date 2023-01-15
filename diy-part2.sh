@@ -90,21 +90,21 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-a
 
 
 # CPU Freq
-rm -rf package/luci-app-cpufreq
-rm -rf package/lean/luci-app-cpufreq 
-rm -rf feeds/luci/applications/luci-app-cpufreq
+# rm -rf package/luci-app-cpufreq
+# rm -rf package/lean/luci-app-cpufreq 
+# rm -rf feeds/luci/applications/luci-app-cpufreq
 
-# svn co https://github.com/Boos4721/openwrt/trunk/package/lean/luci-app-cpufreq package/luci-app-cpufreq
-# svn co https://github.com/Boos4721/luci/trunk/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
-# svn co https://github.com/Boos4721/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
+# # svn co https://github.com/Boos4721/openwrt/trunk/package/lean/luci-app-cpufreq package/luci-app-cpufreq
+# # svn co https://github.com/Boos4721/luci/trunk/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
+# # svn co https://github.com/Boos4721/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
+# # svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
+# svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq package/luci-app-cpufreq
+# svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq package/lean/luci-app-cpufreq 
+# svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
+
 # svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
-svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq package/luci-app-cpufreq
-svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq package/lean/luci-app-cpufreq 
-svn co https://github.com/sdf8057/luci/branches/1806/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
-
-svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq package/luci-app-cpufreq
-svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq package/lean/luci-app-cpufreq 
-svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
+# svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq package/lean/luci-app-cpufreq 
+# svn co https://github.com/sdf8057/luci/trunk/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
 
 
 # svn co https://github.com/Boos4721/openwrt/trunk/config config
