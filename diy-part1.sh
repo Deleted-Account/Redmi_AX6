@@ -21,4 +21,4 @@
 # echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
 
 # PushBot
-echo 'src-git https://github.com/tty228/luci-app-serverchan' >>feeds.conf.default
+echo 'src-git https://github.com/zzsj0928/luci-app-pushbot' >>feeds.conf.default
