@@ -16,5 +16,9 @@
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
 # Passwall LuCI
 # echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
+
+# PushBot
+echo 'src-git https://github.com/tty228/luci-app-serverchan' >>feeds.conf.default
