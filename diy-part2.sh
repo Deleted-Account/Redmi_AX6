@@ -64,12 +64,14 @@ rm -rf feeds/luci/applications/luci-app-serverchan
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 
 
-# Add themes
+# Add theme(s)
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 # git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # git clone https://github.com/thinktip/luci-theme-neobird package/luci-theme-neobird
 # sed -i 's/shadowsocksr/passwall/g' package/luci-theme-neobird/luasrc/view/themes/neobird/header.htm
+
+git clone https://github.com/sdf8057/luci-theme-design package/luci-theme-design
 
 # Smartdns
 rm -rf package/luci-app-smartdns
