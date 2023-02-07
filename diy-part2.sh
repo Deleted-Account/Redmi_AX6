@@ -71,7 +71,7 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-ser
 # git clone https://github.com/thinktip/luci-theme-neobird package/luci-theme-neobird
 # sed -i 's/shadowsocksr/passwall/g' package/luci-theme-neobird/luasrc/view/themes/neobird/header.htm
 
-git clone https://github.com/sdf8057/luci-theme-design.git package/luci-theme-design
+git clone https://github.com/gngpp/luci-theme-design.git package/luci-theme-design
 
 # Smartdns
 rm -rf package/luci-app-smartdns
