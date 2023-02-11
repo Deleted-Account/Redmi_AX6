@@ -36,7 +36,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
 
     steps:
     - name: Checkout
@@ -51,16 +51,16 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-
+        
     - name: Clone source code
       working-directory: /workdir
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-
+        
     - name: Cache
-      uses: klever1988/cachewrtbuild@main
+      uses: stupidloud/cachewrtbuild@main
       with:
         ccache: 'true'
         prefix: ${{ github.workspace }}/openwrt
@@ -71,7 +71,7 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-        useVersionInfo=$(git show -s --date=short --format="编译前的最后一次[➦主源码](https://github.com/robimarko/openwrt/commits/ipq807x-5.15-pr-nss-drv)更新记录:<br/>更新人: %an<br/>更新时间: %cd<br/>更新内容: %s<br/>哈希值: %H")
+        useVersionInfo=$(git show -s --date=short --format="编译前的最后一次[➦主源码](https://github.com/sdf8057/lede/commits/wifi)更新记录:<br/>更新人: %an<br/>更新时间: %cd<br/>更新内容: %s<br/>哈希值: %H")
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
         echo "DATE=$(date "+%Y-%m-%d-%H:%M:%S")" >> $GITHUB_ENV
         echo "DATE1=$(date "+%Y.%m.%d")" >> $GITHUB_ENV
