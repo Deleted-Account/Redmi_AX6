@@ -139,3 +139,24 @@ rm -rf feeds/luci/applications/luci-app-passwall
 
 # PassWall2
 # git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2.git luci-passwall2
+
+# AutoCore
+svn export https://github.com/immortalwrt/immortalwrt/branches/master/package/emortal/autocore package/new/autocore
+sed -i 's/"getTempInfo" /"getTempInfo", "getCPUBench", "getCPUUsage" /g' package/new/autocore/files/luci-mod-status-autocore.json
+
+rm -rf feeds/luci/modules/luci-base
+rm -rf feeds/luci/modules/luci-mod-status
+rm -rf feeds/packages/utils/coremark
+rm -rf package/emortal/default-settings
+
+svn export https://github.com/immortalwrt/luci/branches/master/modules/luci-base feeds/luci/modules/luci-base
+svn export https://github.com/immortalwrt/luci/branches/master/modules/luci-mod-status feeds/luci/modules/luci-mod-status
+svn export https://github.com/immortalwrt/packages/branches/master/utils/coremark package/new/coremark
+svn export https://github.com/immortalwrt/immortalwrt/branches/master/package/emortal/default-settings package/emortal/default-settings
+# svn export https://github.com/immortalwrt/immortalwrt/branches/openwrt-23.05/package/utils/mhz package/utils/mhz
+
+
+# fix luci-theme-argon css
+mkdir -p files/www/luci-static/argon/css
+wget https://github.com/jerrykuku/luci-theme-argon/raw/master/htdocs/luci-static/argon/css/cascade.css -O files/www/luci-static/argon/css/cascade.css
+wget https://github.com/jerrykuku/luci-theme-argon/raw/master/htdocs/luci-static/argon/css/dark.css -O files/www/luci-static/argon/css/dark.css
