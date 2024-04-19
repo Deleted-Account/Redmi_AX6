@@ -1,3 +1,9 @@
+obsoleted.
+new version with NSS: https://github.com/Deleted-Account/xiaomi-ax6-openwrt-build
+
+
+---
+
 2022年12月03日：
 
 1. 相比11月底，上游源把 v2ray-geoip v2ray-geosite 这两个依赖去掉了，编译出来的固件又轻盈了1.几MB。  
